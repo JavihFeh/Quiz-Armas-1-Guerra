@@ -9,3 +9,4 @@ C:\Users\a1704176\source\repos\Quiz_armas\Quiz_armas.DeskView\obj\Debug\Quiz_arm
 C:\Users\a1704176\source\repos\Quiz_armas\Quiz_armas.DeskView\obj\Debug\Quiz_armas.DeskView.csproj.CoreCompileInputs.cache
 C:\Users\a1704176\source\repos\Quiz_armas\Quiz_armas.DeskView\obj\Debug\PronNot.DeskView.exe
 C:\Users\a1704176\source\repos\Quiz_armas\Quiz_armas.DeskView\obj\Debug\PronNot.DeskView.pdb
+C:\Users\a1704176\source\repos\Quiz_armas\Quiz_armas.DeskView\obj\Debug\Quiz_armas.DeskView.csprojResolveAssemblyReference.cache

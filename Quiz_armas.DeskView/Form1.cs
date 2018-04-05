@@ -29,11 +29,57 @@ namespace PronNot.DeskView
         {
 
         }
-         
+        private void Textbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+            idade.MaxLength = 2;
+        }
+
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(string.Format("Seu nome é {0} {1}, sua idade é {2}, seu sexo é {3}.", nome.Text, sobrenome.Text, idade.Text, sexo));
+            if (radioButton3.Checked == true)
+            {
+                sexo = "indefinido";
+            }
+            else if (radioButton4.Checked == true)
+            {
+                sexo = "masculino";
+            }
+            else if (radioButton2.Checked == true)
+            {
+                sexo = "feminino";
+            }
+
+
+            if (checksim.Checked == true && radioButton4.Checked == true | radioButton3.Checked == true | radioButton2.Checked == true && nome.Text != "" && idade.Text != "" && sobrenome.Text != "")
+            {
+                DialogResult res = MessageBox.Show(string.Format("Seu nome é {0} {1}, sua idade é {2}, seu sexo é {3} e foi cadastrado em {4}. Correto?", nome.Text, sobrenome.Text, idade.Text, sexo, dateTimePicker2.Value ), "Confirmação",  MessageBoxButtons.YesNo);
+                if (res == DialogResult.Yes)
+                {
+                    Form loading = new Form2();
+                    loading.Show();
+                }
+            }
+            if (checknao.Checked == true  && radioButton4.Checked == true | radioButton3.Checked == true | radioButton2.Checked == true && nome.Text != "" && idade.Text != "" && sobrenome.Text != "")
+            {
+                Form loading = new Form2();
+                loading.Show();
+            }
+
+            if (checknao.Checked == false && checksim.Checked == false | radioButton4.Checked == false && radioButton3.Checked == false && radioButton2.Checked == false | nome.Text =="" | idade.Text == "" | sobrenome.Text == "")
+            {
+                MessageBox.Show("Por favor, preencha corretamente o formulário.");
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -93,22 +139,27 @@ namespace PronNot.DeskView
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
-            sexo = "masculino";
+            if (radioButton4.Checked == true)
+            {
+                sexo = "masculino";
+            }
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            sexo = "feminino";
-
+            if (radioButton2.Checked == true)
+            {
+                sexo = "feminino";
+            }
         }
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            sexo = "indefinido";
+
         }
 
         private void dateTimePicker2_ValueChanged(object sender, EventArgs e)

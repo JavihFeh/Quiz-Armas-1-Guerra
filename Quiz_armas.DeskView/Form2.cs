@@ -20,7 +20,7 @@ namespace PronNot.DeskView
             pro = 0;
         }
 
-        private void timer_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
             if (pro == 0)
             {
@@ -50,7 +50,13 @@ namespace PronNot.DeskView
             else if (pro == 100)
             {
                 this.Close();
+
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
