@@ -1,0 +1,12 @@
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.Properties.Resources.resources
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.csproj.GenerateResource.Cache
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.csproj.CoreCompileInputs.cache
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\bin\Debug\PronNot.DeskView.exe.config
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\bin\Debug\PronNot.DeskView.exe
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\bin\Debug\PronNot.DeskView.pdb
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.exe
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.pdb
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.PronNot.resources
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.Form2.resources
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.csprojResolveAssemblyReference.cache
+C:\Users\a1704176\source\repos\PronNot\PronNot.DeskView\obj\Debug\PronNot.DeskView.sobre.resources
